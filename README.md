@@ -1,13 +1,13 @@
 # Dahua - Stream video in browser
-Stream RTSP over websocket and use RTSP direclty in web browser. Made possible by new feature in Dahua camera which implements rtspoverwebsocket functionality. This would reduce the need for a server to translate the video stream to HLS or DASH to make RTSP work on web browsers. Kudos to Dahua for this thought.
 
-### NOTE
 **Try the url before using the code below. This will play substream video without much overkill. If this is not working then proceed to next**
 ```
 http://host:port/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
 ```
 
-### Usage
+### RTSP over WS
+Stream RTSP over websocket and use RTSP direclty in web browser. Made possible by new feature in Dahua camera which implements rtspoverwebsocket functionality. This would reduce the need for a server to translate the video stream to HLS or DASH to make RTSP work on web browsers. Kudos to Dahua for this thought.
+
 NOTE: Need support for /rtspoverwebsocket support for using this feature
 ```html
     <video width=400 height=400 id="videoplayer"></video>
