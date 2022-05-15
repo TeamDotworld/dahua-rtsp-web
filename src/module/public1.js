@@ -19,34 +19,7 @@ function BrowserDetect() {
   );
 }
 
-var isDebug = !1,
-  debug = (function (a) {
-    return a
-      ? {
-          log: function (a) {
-            console.log(a);
-          },
-          error: function (a) {
-            console.error(a);
-          },
-          count: function (a) {
-            console.count(a);
-          },
-          info: function (a) {
-            console.info(a);
-          },
-          trace: function (a) {
-            console.trace(a);
-          },
-        }
-      : {
-          log: function () {},
-          error: function () {},
-          count: function () {},
-          info: function () {},
-        };
-  })(isDebug),
-  Script = (function () {
+var Script = (function () {
     function a() {}
     return (
       (a.createFromElementId = function (b) {
@@ -213,4 +186,4 @@ var isDebug = !1,
     );
   };
 
-export { BrowserDetect, Texture, Shader, Script, Program, base64ArrayBuffer };
+export { Script, Program, Shader, Texture, base64ArrayBuffer };
